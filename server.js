@@ -5,7 +5,7 @@ let reservations = [];
 let waitList = [];
 
 let app = express();
-let PORT = 3000;
+let PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
